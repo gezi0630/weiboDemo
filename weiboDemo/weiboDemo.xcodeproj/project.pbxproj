@@ -17,6 +17,8 @@
 		047DA5D41E0CB66C00BD96FF /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D31E0CB66C00BD96FF /* DiscoverViewController.swift */; };
 		047DA5D61E0CB67C00BD96FF /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D51E0CB67C00BD96FF /* CommonViewController.swift */; };
 		047DA5D81E0CB76100BD96FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D71E0CB76100BD96FF /* MainViewController.swift */; };
+		04E821CE1E0E1DB000C792CC /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E821CC1E0E1DB000C792CC /* MainVCSettings.json */; };
+		04E821CF1E0E1DB000C792CC /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E821CD1E0E1DB000C792CC /* NullViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		047DA5D31E0CB66C00BD96FF /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		047DA5D51E0CB67C00BD96FF /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 		047DA5D71E0CB76100BD96FF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04E821CC1E0E1DB000C792CC /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		04E821CD1E0E1DB000C792CC /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 		047DA5C51E0CAF1E00BD96FF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04E821CB1E0E1DB000C792CC /* Resource */,
 				047DA5D71E0CB76100BD96FF /* MainViewController.swift */,
 			);
 			path = Main;
@@ -196,6 +201,15 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		04E821CB1E0E1DB000C792CC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04E821CC1E0E1DB000C792CC /* MainVCSettings.json */,
+				04E821CD1E0E1DB000C792CC /* NullViewController.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E821CE1E0E1DB000C792CC /* MainVCSettings.json in Resources */,
 				047DA59A1E0BB4F400BD96FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +353,7 @@
 				047DA5CE1E0CB62100BD96FF /* MessageViewController.swift in Sources */,
 				047DA5D61E0CB67C00BD96FF /* CommonViewController.swift in Sources */,
 				047DA5931E0BB4F400BD96FF /* AppDelegate.swift in Sources */,
+				04E821CF1E0E1DB000C792CC /* NullViewController.swift in Sources */,
 				047DA5D21E0CB65B00BD96FF /* HomeViewController.swift in Sources */,
 				047DA5D81E0CB76100BD96FF /* MainViewController.swift in Sources */,
 			);
