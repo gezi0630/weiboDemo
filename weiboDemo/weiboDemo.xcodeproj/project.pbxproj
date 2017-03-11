@@ -15,8 +15,15 @@
 		047DA5D01E0CB63100BD96FF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5CF1E0CB63100BD96FF /* ProfileViewController.swift */; };
 		047DA5D21E0CB65B00BD96FF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D11E0CB65B00BD96FF /* HomeViewController.swift */; };
 		047DA5D41E0CB66C00BD96FF /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D31E0CB66C00BD96FF /* DiscoverViewController.swift */; };
-		047DA5D61E0CB67C00BD96FF /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D51E0CB67C00BD96FF /* CommonViewController.swift */; };
 		047DA5D81E0CB76100BD96FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DA5D71E0CB76100BD96FF /* MainViewController.swift */; };
+		048D10BE1E6FE0DD0031D6F5 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10BD1E6FE0DD0031D6F5 /* UIBarButtonItem+Category.swift */; };
+		048D10C01E6FEF300031D6F5 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10BF1E6FEF300031D6F5 /* TitleButton.swift */; };
+		048D10C81E7284790031D6F5 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */; };
+		048D10C91E7284790031D6F5 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */; };
+		048D10CA1E7284790031D6F5 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */; };
+		048D10CC1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */; };
+		048D10CD1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */; };
+		048D10CE1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */; };
 		04AE74C81E1DE07000141324 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE74C71E1DE07000141324 /* BaseTableViewController.swift */; };
 		04AE74CA1E1DE26000141324 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE74C91E1DE26000141324 /* VisitorView.swift */; };
 		04AE74D01E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE74CF1E1DEBAE00141324 /* UIView+AutoLayout.swift */; };
@@ -58,8 +65,11 @@
 		047DA5CF1E0CB63100BD96FF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		047DA5D11E0CB65B00BD96FF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		047DA5D31E0CB66C00BD96FF /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
-		047DA5D51E0CB67C00BD96FF /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 		047DA5D71E0CB76100BD96FF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		048D10BD1E6FE0DD0031D6F5 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		048D10BF1E6FEF300031D6F5 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
+		048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
 		04AE74C71E1DE07000141324 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		04AE74C91E1DE26000141324 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		04AE74CF1E1DEBAE00141324 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -158,7 +168,8 @@
 		047DA5C21E0CAF1E00BD96FF /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				047DA5D51E0CB67C00BD96FF /* CommonViewController.swift */,
+				048D10BD1E6FE0DD0031D6F5 /* UIBarButtonItem+Category.swift */,
+				048D10BF1E6FEF300031D6F5 /* TitleButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 		047DA5C41E0CAF1E00BD96FF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				048D10C61E7284210031D6F5 /* Popover */,
 				047DA5D11E0CB65B00BD96FF /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -212,6 +224,15 @@
 				04AE74CF1E1DEBAE00141324 /* UIView+AutoLayout.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		048D10C61E7284210031D6F5 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */,
+				048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 		04E821CB1E0E1DB000C792CC /* Resource */ = {
@@ -333,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D10C81E7284790031D6F5 /* PopoverViewController.storyboard in Resources */,
 				04E821CE1E0E1DB000C792CC /* MainVCSettings.json in Resources */,
 				047DA59A1E0BB4F400BD96FF /* Assets.xcassets in Resources */,
 			);
@@ -342,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D10C91E7284790031D6F5 /* PopoverViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D10CA1E7284790031D6F5 /* PopoverViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,16 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D10CC1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */,
 				04AE74C81E1DE07000141324 /* BaseTableViewController.swift in Sources */,
 				047DA5D41E0CB66C00BD96FF /* DiscoverViewController.swift in Sources */,
 				047DA5D01E0CB63100BD96FF /* ProfileViewController.swift in Sources */,
 				047DA5CE1E0CB62100BD96FF /* MessageViewController.swift in Sources */,
-				047DA5D61E0CB67C00BD96FF /* CommonViewController.swift in Sources */,
 				047DA5931E0BB4F400BD96FF /* AppDelegate.swift in Sources */,
 				04E821CF1E0E1DB000C792CC /* NullViewController.swift in Sources */,
 				04AE74CA1E1DE26000141324 /* VisitorView.swift in Sources */,
+				048D10BE1E6FE0DD0031D6F5 /* UIBarButtonItem+Category.swift in Sources */,
 				047DA5D21E0CB65B00BD96FF /* HomeViewController.swift in Sources */,
 				04AE74D01E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */,
+				048D10C01E6FEF300031D6F5 /* TitleButton.swift in Sources */,
 				047DA5D81E0CB76100BD96FF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +405,7 @@
 			files = (
 				047DA5A81E0BB4F400BD96FF /* weiboDemoTests.swift in Sources */,
 				04AE74D11E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */,
+				048D10CD1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +415,7 @@
 			files = (
 				047DA5B31E0BB4F400BD96FF /* weiboDemoUITests.swift in Sources */,
 				04AE74D21E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */,
+				048D10CE1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

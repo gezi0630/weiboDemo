@@ -8,9 +8,50 @@
 
 import UIKit
 
+protocol VisitorViewDelegate:NSObjectProtocol {
+    //登录回调
+    func loginBtnWillClick()
+    
+    //注册回调
+    func registerBtnWillClick()
+}
+
 class VisitorView: UIView {
 
+    //定义一个属性保存代理对象
+    //一定要加上weak,避免循环使用
+    weak var delegate:VisitorViewDelegate?
     
+    
+ /**
+     设置未登录界面
+     
+     :param: isHome    是否是首页
+     :param: imageName 需要展示的图标名称
+     :param: message   需要展示的文本内容
+     */
+    func setupVisitorInfo(_ isHome:Bool,imageName:String,message:String)  {
+        //如果不是首页，就隐藏转盘
+        iconView.isHidden = !isHome
+        //修改中间图标
+        homeICon.image = UIImage (named: imageName)
+        //修改文本
+        messageLabel.text = message
+        //是否需要执行动画
+        if isHome {
+            startAnimation()
+        }
+    }
+    
+    
+    func loginBtnClick(){
+        delegate?.loginBtnWillClick()
+    }
+    func registerBtnClick(){
+        
+        delegate?.registerBtnWillClick()
+    }
+
     override init(frame:CGRect) {
         super.init(frame: frame)
         
@@ -45,6 +86,7 @@ class VisitorView: UIView {
         
     }
     
+   
     
     // Swift推荐我们自定义一个控件,要么用纯代码, 要么就用xib/stroyboard
     required init?(coder aDecoder: NSCoder) {
@@ -53,9 +95,22 @@ class VisitorView: UIView {
     }
     
     
+    //MARK: - 内部控制方法
+    fileprivate func startAnimation(){
+        //1.创建动画
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        //2.设置动画属性
+        anim.toValue = 2 * M_PI
+        anim.duration = 20
+        anim.repeatCount = MAXFLOAT
+        //
+        anim.isRemovedOnCompletion = false
+        
+        iconView.layer.add(anim, forKey: nil)
+        
+    }
     
-    
-   //MARK:懒加载控件
+   //MARK: - 懒加载控件
     
     ///转盘
    fileprivate lazy var iconView: UIImageView = {
@@ -89,6 +144,8 @@ class VisitorView: UIView {
         btn.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
         btn.setTitle("登录", for: UIControlState.normal)
         btn.setBackgroundImage(UIImage(named:"common_button_white_disable"), for: UIControlState.normal)
+    
+    btn.addTarget(self, action:#selector(VisitorView.loginBtnClick), for: UIControlEvents.touchUpInside)
         return btn
         
     }()
@@ -99,6 +156,9 @@ class VisitorView: UIView {
         btn.setTitleColor(UIColor.orange, for: UIControlState.normal)
         btn.setTitle("注册", for: UIControlState.normal)
         btn.setBackgroundImage(UIImage(named:"common_button_white_disable"), for: UIControlState.normal)
+    
+    btn.addTarget(self, action:#selector(VisitorView.registerBtnClick), for: UIControlEvents.touchUpInside)
+    
         return btn
         
     }()
