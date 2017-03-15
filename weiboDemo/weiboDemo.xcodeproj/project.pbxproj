@@ -24,6 +24,9 @@
 		048D10CC1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */; };
 		048D10CD1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */; };
 		048D10CE1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */; };
+		048D11001E78E4B20031D6F5 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10FF1E78E4B20031D6F5 /* PopoverAnimator.swift */; };
+		048D11011E78E4B20031D6F5 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10FF1E78E4B20031D6F5 /* PopoverAnimator.swift */; };
+		048D11021E78E4B20031D6F5 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D10FF1E78E4B20031D6F5 /* PopoverAnimator.swift */; };
 		04AE74C81E1DE07000141324 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE74C71E1DE07000141324 /* BaseTableViewController.swift */; };
 		04AE74CA1E1DE26000141324 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE74C91E1DE26000141324 /* VisitorView.swift */; };
 		04AE74D01E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE74CF1E1DEBAE00141324 /* UIView+AutoLayout.swift */; };
@@ -70,6 +73,7 @@
 		048D10BF1E6FEF300031D6F5 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
 		048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
+		048D10FF1E78E4B20031D6F5 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		04AE74C71E1DE07000141324 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		04AE74C91E1DE26000141324 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		04AE74CF1E1DEBAE00141324 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 			children = (
 				048D10C71E7284790031D6F5 /* PopoverViewController.storyboard */,
 				048D10CB1E728C380031D6F5 /* PopoverPresentationController.swift */,
+				048D10FF1E78E4B20031D6F5 /* PopoverAnimator.swift */,
 			);
 			path = Popover;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				047DA5931E0BB4F400BD96FF /* AppDelegate.swift in Sources */,
 				04E821CF1E0E1DB000C792CC /* NullViewController.swift in Sources */,
 				04AE74CA1E1DE26000141324 /* VisitorView.swift in Sources */,
+				048D11001E78E4B20031D6F5 /* PopoverAnimator.swift in Sources */,
 				048D10BE1E6FE0DD0031D6F5 /* UIBarButtonItem+Category.swift in Sources */,
 				047DA5D21E0CB65B00BD96FF /* HomeViewController.swift in Sources */,
 				04AE74D01E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */,
@@ -405,6 +411,7 @@
 			files = (
 				047DA5A81E0BB4F400BD96FF /* weiboDemoTests.swift in Sources */,
 				04AE74D11E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */,
+				048D11011E78E4B20031D6F5 /* PopoverAnimator.swift in Sources */,
 				048D10CD1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +422,7 @@
 			files = (
 				047DA5B31E0BB4F400BD96FF /* weiboDemoUITests.swift in Sources */,
 				04AE74D21E1DEBAE00141324 /* UIView+AutoLayout.swift in Sources */,
+				048D11021E78E4B20031D6F5 /* PopoverAnimator.swift in Sources */,
 				048D10CE1E728C380031D6F5 /* PopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
