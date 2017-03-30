@@ -13,7 +13,7 @@
         <scene sceneID="FjA-cb-9Jj">
             <objects>
                 <navigationController id="nOl-K7-rCg" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uHj-yk-nfa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uHj-yk-nfa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1352712563" green="0.1352712563" blue="0.1352712563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="49" id="Alr-LV-EyM"/>
                                 </constraints>
                                 <items>
-                                    <tabBarItem title="二维码" image="qrcode_tabbar_icon_qrcode_highlighted" id="Qlg-jJ-f6m"/>
+                                    <tabBarItem tag="1" title="二维码" image="qrcode_tabbar_icon_qrcode_highlighted" id="Qlg-jJ-f6m"/>
                                     <tabBarItem title="条形码" image="qrcode_tabbar_icon_barcode" id="AhD-I1-pzM"/>
                                 </items>
                                 <color key="barTintColor" red="0.1352712563" green="0.1352712563" blue="0.1352712563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,7 +93,10 @@
                         <barButtonItem key="rightBarButtonItem" title="相册" id="f35-Fu-GVk"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="containerHeightCons" destination="r0V-Wk-cTB" id="Ryh-q5-3Iv"/>
                         <outlet property="customTabBar" destination="lGI-8H-mxl" id="cFr-W8-qKz"/>
+                        <outlet property="scanLineCons" destination="elc-ON-DVk" id="gs9-D2-f05"/>
+                        <outlet property="scanLineView" destination="xvi-SG-wE3" id="aOZ-LR-jZz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBb-ZU-l7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
